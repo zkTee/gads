@@ -10,5 +10,5 @@ COPY ./scripts/*.sh /usr/local/echox/
 
 RUN chmod +x ${SCRIPT_DIR}/*.sh
 # RUN apt-get update -Y
-RUN apt-get install npm
+RUN apt-get install -y nodejs
 RUN npm install -g yarn
