@@ -25,6 +25,13 @@ jobs:
         continue-on-error: true  # WARNING: only for this example, remove it!
         with:
           command: check
+          
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+        with:
+          buildkitd-flags: --debug
+          driver: docker-containerf
+          
       - 
         name: build
         run: |
