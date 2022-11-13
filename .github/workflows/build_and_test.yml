@@ -25,4 +25,11 @@ jobs:
         continue-on-error: true  # WARNING: only for this example, remove it!
         with:
           command: check
+
+      -
+        name: echo
+        run: >
+          docker build -t xdocker 
+          --target deployed-client
+          -f build.Dockerfile .
         

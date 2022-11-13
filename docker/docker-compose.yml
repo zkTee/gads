@@ -1,0 +1,15 @@
+services:
+  xecho
+    image: integritee-cli:dev
+    container_name: xdocker-xecho
+    build:
+      context: ..
+      dockerfile: build.Dockerfile
+      target: deployed-client
+    networks:
+      - integritee-test-network
+    entrypoint: "/app/echo.sh 2>&1"
+    restart: "no"
+networks:
+  integritee-test-network:
+    driver: bridge
