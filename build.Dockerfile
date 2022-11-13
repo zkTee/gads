@@ -2,7 +2,7 @@
 ##################################################
 FROM rust:1.61
 
-WORKDIR /app
+WORKDIR $HOME/worker
 COPY . .
 
 RUN make
