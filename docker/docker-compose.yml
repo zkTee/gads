@@ -1,6 +1,6 @@
 services:
   xecho
-    image: integritee-cli:dev
+#     image: integritee-cli:dev
     container_name: xdocker-xecho
     build:
       context: ..
