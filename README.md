@@ -1,3 +1,4 @@
-# xdocker
+# gads
 
-Github Actions + docker commpose + shell
+Experimental project:   
+Github Actions + docker commpose + shell script
