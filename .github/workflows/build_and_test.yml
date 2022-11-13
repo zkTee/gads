@@ -43,5 +43,5 @@ jobs:
         name: echo
         run: |
           cd docker
-          docker-compose -f docker-compose.yml up --no-build
+          docker-compose -f docker-compose.yml up #--no-build
         
