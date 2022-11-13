@@ -28,8 +28,7 @@ jobs:
 
       -
         name: echo
-        run: >
-          docker build -t xdocker 
-          --target deployed-client
-          -f build.Dockerfile .
+        run: |
+          cd docker
+          docker-compose -f docker-compose.yml up --no-build
         
