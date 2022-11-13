@@ -30,5 +30,6 @@ jobs:
         name: echo
         run: |
           cd docker
+          docker build -t xdocker --target deployed-worker -f build.Dockerfile .
           docker-compose -f docker-compose.yml up --no-build
         
