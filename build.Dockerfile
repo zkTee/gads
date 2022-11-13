@@ -9,6 +9,6 @@ ARG SCRIPT_DIR=/usr/local/echox
 COPY ./scripts/*.sh /usr/local/echox/
 
 RUN chmod +x ${SCRIPT_DIR}/*.sh
-RUN apt-get update
+# RUN apt-get update -Y
 RUN apt-get install npm
 RUN npm install -g yarn
