@@ -37,7 +37,7 @@ jobs:
         env:
           DOCKER_BUILDKIT: 1
         run: |
-          docker build -t xdocker --target deployed-worker -f build.Dockerfile .
+          docker build -t xdocker -f build.Dockerfile .
         
       -
         name: echo
