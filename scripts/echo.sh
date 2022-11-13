@@ -2,6 +2,6 @@
 
 set -e
 
-yarn install
+yarn --version
 
 echo "Hi..."
